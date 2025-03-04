@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -37,6 +39,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.open();
+            }
+        });
+
+        View headerView = navigationView.getHeaderView(0);
+        ImageView useImage = headerView.findViewById(R. id.userImage);
+        TextView textUsername = headerView.findViewById(R.id.textUsername);
+
+        useImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, textUsername.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
