@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R. id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView= findViewById(R.id.navigationView);
+        TextView textViewCoachify = findViewById(R.id.textView2);
+        ImageView imageViewLogo = findViewById(R.id.myImageView);
 
         buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
         ImageView useImage = headerView.findViewById(R. id.userImage);
         TextView textUsername = headerView.findViewById(R.id.textUsername);
 
+
+
+        textViewCoachify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.open();
+            }
+        });
+
+        imageViewLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.open();
+            }
+        });
+
         useImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,12 +71,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+
+
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 int itemId = item.getItemId();
 
+                if (itemId == R.id.navLogin) {
+                    Toast.makeText(MainActivity.this, "Belépés", Toast.LENGTH_SHORT).show();
+                }
 
                 if (itemId == R.id.navMenu) {
                     Toast.makeText(MainActivity.this, "Menüre Kattintot", Toast.LENGTH_SHORT).show();
@@ -106,7 +133,9 @@ public class MainActivity extends AppCompatActivity {
 
                 return false;
             }
+
         });
+
 
 
     }
