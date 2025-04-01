@@ -1,6 +1,13 @@
 package com.example.myapplication;
 
 
+
+import com.example.myapplication.CalendarFragment;
+import com.example.myapplication.StartScreenFragment;
+import androidx.fragment.app.FragmentTransaction;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 import android.view.View;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
+
         drawerLayout = findViewById(R. id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView= findViewById(R.id.navigationView);
@@ -63,14 +74,20 @@ public class MainActivity extends AppCompatActivity {
         textViewCoachify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.open();
+                getSupportFragmentManager().beginTransaction()
+                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                        .replace(R.id.content_frame, new StartScreenFragment())
+                        .commit();
             }
         });
 
         imageViewLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.open();
+                getSupportFragmentManager().beginTransaction()
+                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                        .replace(R.id.content_frame, new StartScreenFragment())
+                        .commit();
             }
         });
 
@@ -98,7 +115,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (item.getItemId() == R.id.navMenu) {
-                    setContentView(R.layout.start_screen);
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new StartScreenFragment())
+                            .commit();
+
                 }
 
 
@@ -110,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (itemId == R.id.navNap) {
                     getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
                             .replace(R.id.content_frame, new CalendarFragment())
                             .commit();
 
