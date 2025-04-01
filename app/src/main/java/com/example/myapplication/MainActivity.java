@@ -1,5 +1,11 @@
 package com.example.myapplication;
 
+
+import android.view.View;
+import android.widget.FrameLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import com.google.android.material.navigation.NavigationView;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -7,7 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.MenuItem;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R. id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView= findViewById(R.id.navigationView);
+
+
         TextView textViewCoachify = findViewById(R.id.textView2);
         ImageView imageViewLogo = findViewById(R.id.myImageView);
+
 
         buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         ImageView useImage = headerView.findViewById(R. id.userImage);
         TextView textUsername = headerView.findViewById(R.id.textUsername);
+        NavigationView navigationView = findViewById(R.id.navigationView);
 
 
 
@@ -87,10 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Belépés", Toast.LENGTH_SHORT).show();
                 }
 
-                if (itemId == R.id.navMenu) {
-                    Toast.makeText(MainActivity.this, "Menüre Kattintot", Toast.LENGTH_SHORT).show();
+                if (item.getItemId() == R.id.navMenu) {
+                    setContentView(R.layout.start_screen);
                 }
-
 
 
                 if (itemId == R.id.navHir) {
@@ -100,8 +109,12 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if (itemId == R.id.navNap) {
-                    Toast.makeText(MainActivity.this, "Naptár", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.content_frame, new CalendarFragment())
+                            .commit();
+
                 }
+
 
 
 

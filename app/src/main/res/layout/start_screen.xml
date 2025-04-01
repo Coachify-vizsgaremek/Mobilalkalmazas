@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <!-- 1. fekete doboz -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:hint="Első doboz"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#FFA500"/>
+
+    <!-- 2. fekete doboz -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:hint="Második doboz"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#FFA500"/>
+
+    <!-- 3. fekete doboz -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:hint="Harmadik doboz"
+        android:padding="12dp"
+        android:textColorHint="#FFA500"/>
+
+</LinearLayout>

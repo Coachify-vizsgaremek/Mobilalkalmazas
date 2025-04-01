@@ -10,7 +10,8 @@
         <item
             android:icon="@drawable/menu"
             android:id="@+id/navMenu"
-            android:title="Menu" />
+            android:title="Menu"
+            android:checked="true"/>
 
         <item
             android:icon="@drawable/news"

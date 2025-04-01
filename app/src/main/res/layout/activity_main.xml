@@ -4,17 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:openDrawer="start"
     android:id = "@+id/drawerLayout"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/allbackground"
         android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="396dp"
+                android:layout_height="387dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="340dp"
+                android:textAlignment="center"
+                android:text="Edzők akik érted dolgoznak!"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30pt" />
+        </FrameLayout>
 
 
 
@@ -33,6 +52,9 @@
         app:itemIconPadding="30dp"
         app:headerLayout="@layout/drawer_header"
         android:layout_gravity="start" />
+
+
+
 
 
 
