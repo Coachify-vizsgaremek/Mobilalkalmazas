@@ -111,7 +111,10 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.navLogin) {
-                    Toast.makeText(MainActivity.this, "Belépés", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new LoginFragment())
+                            .commit();
                 }
 
                 if (item.getItemId() == R.id.navMenu) {
@@ -124,7 +127,10 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if (itemId == R.id.navHir) {
-                    Toast.makeText(MainActivity.this, "Legfrissebb hírek", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new NewsFragment())
+                            .commit();
                 }
 
 
@@ -141,25 +147,37 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if (itemId == R.id.navEdzes) {
-                    Toast.makeText(MainActivity.this, "Edzései", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new EdzesekFragment())
+                            .commit();
                 }
 
 
 
                 if (itemId == R.id.navFotok) {
-                    Toast.makeText(MainActivity.this, "Fotóink", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new PicturesFragment())
+                            .commit();
                 }
 
 
 
                 if (itemId == R.id.navFaq) {
-                    Toast.makeText(MainActivity.this, "FAQ", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new FaqFragment())
+                            .commit();
                 }
 
 
 
                 if (itemId == R.id.navElerhetoseg) {
-                    Toast.makeText(MainActivity.this, "Elérhetőségeink", Toast.LENGTH_SHORT).show();
+                    getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.content_frame, new ElerhetosegekFragment())
+                            .commit();
                 }
 
                 drawerLayout.close();
