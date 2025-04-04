@@ -16,7 +16,8 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Első információ"
+        android:text="Szükséges regisztráció az edzéstervek megtekintéséhez?
+                                              Nem, az alkalmazásban regisztráció nélkül is megtekintheted az edzésterveket."
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
@@ -28,7 +29,8 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Második információ"
+        android:text="Mennyi idő után láthatok eredményeket?
+                        Ez egyénenként változik, de általában 3-4 hét után már látható változások tapasztalhatók, ha rendszeresen végzed az edzéseket és követed az ajánlásokat."
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
@@ -40,7 +42,21 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Harmadik információ"
-        android:padding="12dp"/>
+        android:text="Van kezdőknek szóló program?
+            Természetesen! Az applikáció egyszere kezdő és haladó programokat is kínál, amelyek fokozatosan vezetnek be az edzés világába sérülésmentesen."
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:text="Hogyan tudom eldönteni, melyik edzésterv való nekem?
+                                                            Az edzéstervek leírásában megtalálod az ajánlott szintet (pl. kezdő, haladó), az edzés időtartamát, valamint azt is, hogy kell-e hozzá valamilyen felszerelés."
+        android:padding="12dp"
+        />
 
 </LinearLayout>

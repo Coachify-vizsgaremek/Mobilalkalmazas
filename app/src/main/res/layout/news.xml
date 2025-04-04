@@ -1,46 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="63dp"
-    android:padding="16dp"
-    android:background="#80FFFFFF">
-
-    <!-- 1. fekete doboz (nem szerkeszthető) -->
-    <TextView
-        android:id="@+id/box1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Első információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-    <!-- 2. fekete doboz -->
-    <TextView
-        android:id="@+id/box2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Második információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- 1. fekete doboz (nem szerkeszthető) -->
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="proba"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- 3. fekete doboz -->
-    <TextView
-        android:id="@+id/box3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Harmadik információ"
-        android:padding="12dp"/>
+        <!-- 2. fekete doboz -->
+        <TextView
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="proba22"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-</LinearLayout>
+        <!-- 3. fekete doboz -->
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="proba333"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/box4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="proba4444"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

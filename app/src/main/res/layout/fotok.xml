@@ -1,46 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="63dp"
-    android:padding="16dp"
-    android:background="#80FFFFFF">
+    android:layout_height="match_parent">
 
-    <!-- 1. fekete doboz (nem szerkeszthető) -->
-    <TextView
-        android:id="@+id/box1"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Első információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-    <!-- 2. fekete doboz -->
-    <TextView
-        android:id="@+id/box2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Második információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- 1. fekete doboz (nem szerkeszthető) -->
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Magda Ágoston,
+                                    Vezérigazgató"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- 3. fekete doboz -->
-    <TextView
-        android:id="@+id/box3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Harmadik információ"
-        android:padding="12dp"/>
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/agoston"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Kaiser Móric,
+                                                Technológiai Igazgató"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 2. kép és szöveg -->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/moric"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Podhorányi Donát,
+                                            Marketing- és Kommunikációs Igazgató"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 3. kép és szöveg -->
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/donat"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        
+
+
+
+    </LinearLayout>
+</ScrollView>

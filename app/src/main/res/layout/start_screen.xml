@@ -1,46 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="63dp"
-    android:padding="16dp"
-    android:background="#80FFFFFF">
-
-    <!-- 1. fekete doboz (nem szerkeszthető) -->
-    <TextView
-        android:id="@+id/box1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Első információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-    <!-- 2. fekete doboz -->
-    <TextView
-        android:id="@+id/box2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Második információ"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- 1. fekete doboz (nem szerkeszthető) -->
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Üdvözlünk alkalmazásunkban!
+                    Fedezd fel a legújabb funkciókat, kezeld egyszerűen a fiókodat, és hozd ki a legtöbbet az élményből. Az intuitív kezelőfelület és az okos megoldások segítenek, hogy minden egy helyen elérhető legyen számodra – gyorsan, biztonságosan, kényelmesen."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- 3. fekete doboz -->
-    <TextView
-        android:id="@+id/box3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Harmadik információ"
-        android:padding="12dp"/>
+        <ImageView
+            android:id="@+id/imageee1"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/sadasdsa"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
 
-</LinearLayout>
+        <!-- 2. fekete doboz -->
+        <TextView
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Fontos az adatvédelem!
+                                            Az adataid biztonsága kiemelten fontos számunkra. Az alkalmazásunk megfelel a legszigorúbb adatvédelmi irányelveknek. A személyes információid titkosítva tároljuk, és sosem adjuk ki harmadik félnek. Használj erős jelszót, hogy biztonságba legyenek az adataid."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 3. fekete doboz -->
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Offline funkció!
+                                                            Használat internet nélkül is
+    Alkalmazásunk funkciói internetkapcsolat nélkül is elérhetők. Így útközben, utazás közben vagy hálózati probléma esetén is kényelmesen hozzáférhetsz a fontos tartalmakhoz."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/box4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Légy fittebb, légy te a fókuszban!
+                                                Kövesd a napi edzéseket, tűz ki célokat, és nézd meg, hogy milyen sokat fejlődsz egyetlen helyen. Legyen szó kezdő, haladó, vagy napi edzésekről."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageee2"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/fsafsad"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
