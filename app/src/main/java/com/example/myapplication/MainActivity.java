@@ -1,195 +1,112 @@
 package com.example.myapplication;
 
-
-
-import com.example.myapplication.CalendarFragment;
-import com.example.myapplication.StartScreenFragment;
-import androidx.fragment.app.FragmentTransaction;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import android.view.View;
-import android.widget.FrameLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-import com.google.android.material.navigation.NavigationView;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.MenuItem;
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    DrawerLayout drawerLayout;
-    ImageButton buttonDrawerToggle;
-    NavigationView navigationView;
+    private DrawerLayout drawerLayout;
+    private ImageButton buttonDrawerToggle;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Drawer és navigáció inicializálása
+        initDrawerAndNavigation();
+
+        // Alapértelmezettként a LoginFragment betöltése
+        if (savedInstanceState == null) {
+            loadFragment(new LoginFragment(), false);
+        }
+    }
 
 
-
-
-
-
-        drawerLayout = findViewById(R. id.drawerLayout);
+    private void initDrawerAndNavigation() {
+        drawerLayout = findViewById(R.id.drawerLayout);
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
-        navigationView= findViewById(R.id.navigationView);
+        navigationView = findViewById(R.id.navigationView);
 
+        // Drawer toggle gomb
+        buttonDrawerToggle.setOnClickListener(v -> drawerLayout.open());
 
-        TextView textViewCoachify = findViewById(R.id.textView2);
-        ImageView imageViewLogo = findViewById(R.id.myImageView);
-
-
-        buttonDrawerToggle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                drawerLayout.open();
-            }
-        });
-
+        // Header elemek
         View headerView = navigationView.getHeaderView(0);
-        ImageView useImage = headerView.findViewById(R. id.userImage);
+        ImageView userImage = headerView.findViewById(R.id.userImage);
         TextView textUsername = headerView.findViewById(R.id.textUsername);
-        NavigationView navigationView = findViewById(R.id.navigationView);
 
+        userImage.setOnClickListener(v ->
+                Toast.makeText(this, textUsername.getText(), Toast.LENGTH_SHORT).show());
 
+        // Navigációs menü kezelése
+        navigationView.setNavigationItemSelectedListener(item -> {
+            int itemId = item.getItemId();
 
-        textViewCoachify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction()
-                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                        .replace(R.id.content_frame, new StartScreenFragment())
-                        .commit();
+            if (itemId == R.id.navLogin) {
+                loadFragment(new LoginFragment(), true);
             }
-        });
-
-        imageViewLogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction()
-                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                        .replace(R.id.content_frame, new StartScreenFragment())
-                        .commit();
+            else if (itemId == R.id.navMenu) {
+                loadFragment(new StartScreenFragment(), true);
             }
-        });
-
-        useImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, textUsername.getText(), Toast.LENGTH_SHORT).show();
+            else if (itemId == R.id.navHir) {
+                loadFragment(new NewsFragment(), true);
             }
-        });
-
-
-
-
-
-
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                int itemId = item.getItemId();
-
-                if (itemId == R.id.navLogin) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new LoginFragment())
-                            .commit();
-                }
-
-                if (item.getItemId() == R.id.navMenu) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new StartScreenFragment())
-                            .commit();
-
-                }
-
-
-                if (itemId == R.id.navHir) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new NewsFragment())
-                            .commit();
-                }
-
-
-
-                if (itemId == R.id.navNap) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new CalendarFragment())
-                            .commit();
-
-                }
-
-
-
-
-                if (itemId == R.id.navEdzes) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new EdzesekFragment())
-                            .commit();
-                }
-
-
-
-                if (itemId == R.id.navFotok) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new PicturesFragment())
-                            .commit();
-                }
-
-
-
-                if (itemId == R.id.navFaq) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new FaqFragment())
-                            .commit();
-                }
-
-
-
-                if (itemId == R.id.navElerhetoseg) {
-                    getSupportFragmentManager().beginTransaction()
-                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.content_frame, new ElerhetosegekFragment())
-                            .commit();
-                }
-
-                drawerLayout.close();
-
-
-
-                return false;
+            else if (itemId == R.id.navNap) {
+                loadFragment(new CalendarFragment(), true);
+            }
+            else if (itemId == R.id.navEdzes) {
+                loadFragment(new EdzesekFragment(), true);
+            }
+            else if (itemId == R.id.navFotok) {
+                loadFragment(new PicturesFragment(), true);
+            }
+            else if (itemId == R.id.navFaq) {
+                loadFragment(new FaqFragment(), true);
+            }
+            else if (itemId == R.id.navElerhetoseg) {
+                loadFragment(new ElerhetosegekFragment(), true);
             }
 
+            drawerLayout.close();
+            return true;
         });
+    }
 
+    public void loadFragment(Fragment fragment, boolean addToBackStack) {
+        try {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+            transaction.replace(R.id.content_frame, fragment);
 
+            if (addToBackStack) {
+                transaction.addToBackStack(null);
+            }
 
+            transaction.commit();
+        } catch (Exception e) {
+            Log.e("MainActivity", "Error loading fragment", e);
+        }
+    }
+
+    public void navigateToMainScreen() {
+        loadFragment(new StartScreenFragment(), true);
+    }
+
+    public void loadFragment(SignupFragment signupFragment) {
+        loadFragment(signupFragment, true);
     }
 }
