@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
+
 
 public class LoginFragment extends Fragment {
     private EditText etEmail, etPassword;
@@ -46,6 +48,10 @@ public class LoginFragment extends Fragment {
         }
 
         if (databaseHelper.checkUser(email, password)) {
+            DatabaseHelper.User user = databaseHelper.getUserData(email);
+            if (user != null) {
+                ((MainActivity)requireActivity()).updateDrawerHeader(user.name, user.email);
+            }
             ((MainActivity)requireActivity()).navigateToMainScreen();
         } else {
             Toast.makeText(getContext(), "Hibás email vagy jelszó", Toast.LENGTH_SHORT).show();
@@ -54,5 +60,14 @@ public class LoginFragment extends Fragment {
 
     private void navigateToSignup() {
         ((MainActivity)requireActivity()).loadFragment(new SignupFragment());
+    }
+}
+class User {
+    String name;
+    String email;
+
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 }

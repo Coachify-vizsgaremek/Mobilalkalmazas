@@ -20,9 +20,12 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:drawablePadding="8dp"
+        android:layout_marginRight="15dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:padding="8dp" />
+        android:padding="8dp"
+
+        />
 
     <EditText
         android:id="@+id/login_password"
@@ -31,16 +34,22 @@
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:drawablePadding="8dp"
+        android:layout_marginRight="15dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="8dp" />
+        android:padding="8dp"
+
+        />
     <Button
         android:id="@+id/login_button"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
         android:text="Login"
         android:textSize="18sp"
+        app:cornerRadius = "30dp"
+
         />
     <Button
         android:id="@+id/signupRedirectButton"
@@ -49,8 +58,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="14dp"
         android:padding="8dp"
+        android:layout_marginLeft="5dp"
         android:text="Not yet registered? Signup"
-
+        app:cornerRadius = "30dp"
         />
 
 

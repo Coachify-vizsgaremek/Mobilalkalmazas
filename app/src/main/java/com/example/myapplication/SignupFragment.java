@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 public class SignupFragment extends Fragment {
-    private EditText etEmail, etPassword, etConfirmPassword;
+    private EditText etName, etEmail, etPassword, etConfirmPassword;
     private Button btnSignup;
     private TextView tvLoginRedirect;
     private DatabaseHelper databaseHelper;
@@ -23,6 +23,7 @@ public class SignupFragment extends Fragment {
         View view = inflater.inflate(R.layout.signup, container, false);
 
         // View elemek összekötése - IDE KELL A findViewById()!
+        etName = view.findViewById(R.id.signup_name);
         etEmail = view.findViewById(R.id.signup_email);
         etPassword = view.findViewById(R.id.signup_password);
         etConfirmPassword = view.findViewById(R.id.signup_confirm);
@@ -49,6 +50,7 @@ public class SignupFragment extends Fragment {
     private void handleSignup() {
         Log.d("SignupFragment", "Handling signup");
 
+        String name = etName.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
         String confirmPassword = etConfirmPassword.getText().toString().trim();
@@ -69,8 +71,10 @@ public class SignupFragment extends Fragment {
             return;
         }
 
-        if (databaseHelper.addUser(email, password)) {
-            Toast.makeText(getContext(), "Sikeres regisztráció!", Toast.LENGTH_LONG).show();
+        if (databaseHelper.addUser(name, email, password)) {
+            // Sikeres regisztráció után frissítsd a headert
+            ((MainActivity)requireActivity()).updateDrawerHeader(name, email);
+            // Navigálj a Loginra
             navigateToLogin();
         } else {
             Toast.makeText(getContext(), "Regisztrációs hiba történt", Toast.LENGTH_LONG).show();

@@ -12,17 +12,28 @@
     android:gravity="end|center_vertical"
     >
 
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:layout_marginRight="16dp"/>
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:id="@+id/signup_email"
         android:background="@color/white"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:padding="8dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:drawablePadding="8dp"/>
+        android:drawablePadding="8dp"
+        android:layout_marginRight="16dp"/>
     <EditText
         android:layout_width="350dp"
         android:layout_height="60dp"
@@ -32,7 +43,8 @@
         android:padding="8dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:drawablePadding="8dp"/>
+        android:drawablePadding="8dp"
+        android:layout_marginRight="16dp"/>
     <EditText
         android:layout_width="350dp"
         android:layout_height="60dp"
@@ -42,7 +54,8 @@
         android:padding="8dp"
         android:hint="Confirm Password"
         android:inputType="textPassword"
-        android:drawablePadding="8dp"/>
+        android:drawablePadding="8dp"
+        android:layout_marginRight="16dp"/>
     <Button
         android:layout_width="350dp"
         android:layout_height="70dp"
@@ -50,6 +63,7 @@
         android:id="@+id/signup_button"
         android:textSize="18sp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
         app:cornerRadius = "30dp"/>
     <TextView
         android:layout_width="wrap_content"

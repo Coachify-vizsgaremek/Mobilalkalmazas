@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton buttonDrawerToggle;
     private NavigationView navigationView;
 
+    private TextView textUsername;
+    private TextView textUserEmail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,13 +44,22 @@ public class MainActivity extends AppCompatActivity {
         buttonDrawerToggle = findViewById(R.id.buttonDrawerToggle);
         navigationView = findViewById(R.id.navigationView);
 
+        TextView textViewCoachify = findViewById(R.id.textView2);
+        ImageView imageViewLogo = findViewById(R.id.myImageView);
+
+        textViewCoachify.setOnClickListener(v -> loadFragment(new StartScreenFragment(), true));
+        imageViewLogo.setOnClickListener(v -> loadFragment(new StartScreenFragment(), true));
+
+
         // Drawer toggle gomb
         buttonDrawerToggle.setOnClickListener(v -> drawerLayout.open());
 
         // Header elemek
         View headerView = navigationView.getHeaderView(0);
         ImageView userImage = headerView.findViewById(R.id.userImage);
-        TextView textUsername = headerView.findViewById(R.id.textUsername);
+        textUsername = headerView.findViewById(R.id.textUsername);
+        textUserEmail = headerView.findViewById(headerView.getResources()
+                .getIdentifier("textUserEmail", "id", getPackageName()));
 
         userImage.setOnClickListener(v ->
                 Toast.makeText(this, textUsername.getText(), Toast.LENGTH_SHORT).show());
@@ -108,5 +120,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadFragment(SignupFragment signupFragment) {
         loadFragment(signupFragment, true);
+    }
+
+    public void updateDrawerHeader(String name, String email) {
+        runOnUiThread(() -> {
+            if (textUsername != null) textUsername.setText(name);
+            if (textUserEmail != null) textUserEmail.setText(email);
+        });
     }
 }
