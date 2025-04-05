@@ -16,7 +16,7 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Szükséges regisztráció az edzéstervek megtekintéséhez?
+        android:text="SZÜKSÉGES REGISZTRÁCIÓ AZ EDZÉSTERVEK MEGTEKINTÉSÉHEZ?
                                               Nem, az alkalmazásban regisztráció nélkül is megtekintheted az edzésterveket."
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
@@ -29,8 +29,8 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Mennyi idő után láthatok eredményeket?
-                        Ez egyénenként változik, de általában 3-4 hét után már látható változások tapasztalhatók, ha rendszeresen végzed az edzéseket és követed az ajánlásokat."
+        android:text="MENNYI IDŐ UTÁN LÁTHATOK EREDMÉNYEKET?
+                                                                                            Ez egyénenként változik, de általában 3-4 hét után már látható változások tapasztalhatók, ha rendszeresen végzed az edzéseket és követed az ajánlásokat."
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
@@ -42,7 +42,7 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Van kezdőknek szóló program?
+        android:text="VAN KEZDŐKNEK SZÓLÓ PROGRAM?
             Természetesen! Az applikáció egyszere kezdő és haladó programokat is kínál, amelyek fokozatosan vezetnek be az edzés világába sérülésmentesen."
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
@@ -54,7 +54,7 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Hogyan tudom eldönteni, melyik edzésterv való nekem?
+        android:text="HOGYAN TUDOM ELDÖNTENI, MELYIK EDZÉSTERV VALÓ NEKEM?
                                                             Az edzéstervek leírásában megtalálod az ajánlott szintet (pl. kezdő, haladó), az edzés időtartamát, valamint azt is, hogy kell-e hozzá valamilyen felszerelés."
         android:padding="12dp"
         />

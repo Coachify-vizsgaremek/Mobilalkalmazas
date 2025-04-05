@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -19,10 +20,18 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:textColor="#FFA500"
-            android:textSize="18sp"
-            android:text="proba"
+            android:textSize="28sp"
+            android:text="Fogyás és Táplálkozás: Az Új Trendek és Érdekes Tények"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageeeee1"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/keves"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
 
         <!-- 2. fekete doboz -->
         <TextView
@@ -32,7 +41,8 @@
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="proba22"
+            android:text="SALÁTÁK AZ ÉTKEZÉS ELŐTT?
+                                                Kutatások szerint, ha egy nagy adag salátát fogyasztunk étkezés előtt, segíthet csökkenteni a kalóriabevitelt. A saláta nemcsak kalóriaszegény, hanem gazdag C-vitaminban, E-vitaminban és antioxidánsokban is, amelyek támogathatják immunrendszerünket."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -44,7 +54,8 @@
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="proba333"
+            android:text="LEVESEK: A TITOK A FOGYÁSBAN!
+                                                                Az étkezés előtt elfogyasztott levesek segíthetnek a kalóriák csökkentésében. A folyadék megtölti a gyomrot, így kevesebb kalóriát veszünk magunkhoz. A levesek különösen akkor hatékonyak, ha alacsony kalóriatartalmúak és zöldségeket tartalmaznak."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -54,9 +65,45 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Miért érdemes úszni a fogyás érdekében?"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/box5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="proba4444"
-            android:padding="12dp"/>
+            android:text="HATÉKONY KALÓRIAÉGETÉS!
+                                                        Az úszás az egyik legjobb kalóriaégető sport. Egy 70 kg-os személy akár 372 kalóriát is elégethet egy órás intenzív úszás alatt."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/box6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="KÍMÉLETES ÉS MENTÁLISAN JÓTÉKONY!
+                                                                Az úszás nemcsak a testet formálja, hanem a mentális egészséget is javítja. Csökkenti a stresszt, javítja a hangulatot és növeli az energiaszintet."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageeeee2"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/uszas"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
 
     </LinearLayout>
 </ScrollView>

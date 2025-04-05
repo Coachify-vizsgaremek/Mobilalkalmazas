@@ -9,18 +9,19 @@
     android:background="#80FFFFFF">
 
     <!-- 1. fekete doboz (nem szerkeszthető) -->
+
     <TextView
         android:id="@+id/box1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
         android:textColor="#FFA500"
-        android:textSize="18sp"
-        android:text="Első információ"
+        android:textSize="28sp"
+        android:text="ELÉRHETŐSÉGEK"
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 2. fekete doboz -->
+
     <TextView
         android:id="@+id/box2"
         android:layout_width="match_parent"
@@ -28,11 +29,11 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Második információ"
+        android:text="Email: info@coachify.com"
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 3. fekete doboz -->
+    <!-- 2. fekete doboz -->
     <TextView
         android:id="@+id/box3"
         android:layout_width="match_parent"
@@ -40,7 +41,21 @@
         android:background="#000000"
         android:textColor="#FFA500"
         android:textSize="18sp"
-        android:text="Harmadik információ"
+        android:text="Telefon: +36 1 234 5678"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 3. fekete doboz -->
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:text="Cím: 1234 Budapest, Példa utca 12."
         android:padding="12dp"/>
+
+
 
 </LinearLayout>

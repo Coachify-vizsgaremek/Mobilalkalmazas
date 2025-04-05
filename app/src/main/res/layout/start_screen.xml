@@ -15,14 +15,27 @@
 
         <!-- 1. fekete doboz (nem szerkeszthető) -->
         <TextView
+            android:id="@+id/boxnulladik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="ÜDVÖZLÜNK AZ ALKALMAZÁSUNKBAN!"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+        <TextView
             android:id="@+id/box1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="Üdvözlünk alkalmazásunkban!
-                    Fedezd fel a legújabb funkciókat, kezeld egyszerűen a fiókodat, és hozd ki a legtöbbet az élményből. Az intuitív kezelőfelület és az okos megoldások segítenek, hogy minden egy helyen elérhető legyen számodra – gyorsan, biztonságosan, kényelmesen."
+            android:text="Fedezd fel a legújabb funkciókat, kezeld egyszerűen a fiókodat, és hozd ki a legtöbbet az élményből. Az intuitív kezelőfelület és az okos megoldások segítenek, hogy minden egy helyen elérhető legyen számodra – gyorsan, biztonságosan, kényelmesen."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -42,7 +55,7 @@
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="Fontos az adatvédelem!
+            android:text="FONTOS AZ ADATVÉDELEM!
                                             Az adataid biztonsága kiemelten fontos számunkra. Az alkalmazásunk megfelel a legszigorúbb adatvédelmi irányelveknek. A személyes információid titkosítva tároljuk, és sosem adjuk ki harmadik félnek. Használj erős jelszót, hogy biztonságba legyenek az adataid."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
@@ -55,14 +68,11 @@
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="Offline funkció!
+            android:text="OFFLINE FUNKCIÓ!
                                                             Használat internet nélkül is
     Alkalmazásunk funkciói internetkapcsolat nélkül is elérhetők. Így útközben, utazás közben vagy hálózati probléma esetén is kényelmesen hozzáférhetsz a fontos tartalmakhoz."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
-
-
-
 
         <TextView
             android:id="@+id/box4"
@@ -71,7 +81,22 @@
             android:background="#000000"
             android:textColor="#FFA500"
             android:textSize="18sp"
-            android:text="Légy fittebb, légy te a fókuszban!
+            android:text="RÓLUNK!
+                                                                    A Coachify 2015-ben alakult, és azóta is az egészséges életmód népszerűsítését tűzte ki célul. Alapítóink, Magda Ágoston, Kaiser Móric és Pohorányi Donát, hosszú évek tapasztalatával hozták létre ezt a platformot, hogy mindenki számára elérhetővé tegyék a személyre szabott edzés- és életmód tanácsadást."
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/box5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="LÉGY FITTEBB, LÉGY TE A FÓKUSZBAN!
                                                 Kövesd a napi edzéseket, tűz ki célokat, és nézd meg, hogy milyen sokat fejlődsz egyetlen helyen. Legyen szó kezdő, haladó, vagy napi edzésekről."
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
