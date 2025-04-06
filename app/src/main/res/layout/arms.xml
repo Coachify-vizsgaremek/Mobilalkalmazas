@@ -1,6 +1,400 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/kezdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Kezdő"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/kezdofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Kezdő Kar Edzés Felszereléssel\n
+Időtartam: kb. 30-35 perc\n
+Felszerelés:\n
+Kézi súlyzók (vagy vizes palack)\n
+
+Gumikötél / resistance band\n
+
+Pad vagy szék (tricepsz gyakorlatnál)\n
+\n
+\n
+\n
+Bemelegítés (5 perc)\n
+Kar körzés előre-hátra 2x20\n
+
+Könnyű gumiköteles karhajlítás 2x15\n
+
+Vállkörzés 2x20\n
+
+Csukló körzés 2x20\n
+\n
+\n
+\n
+Edzés Munka Rész (20-25 perc)\n
+1. Bicepsz hajlítás kézisúlyzóval\n
+3 sorozat 12-15 ismétlés\n
+Könyök maradjon a test mellett, lassan dolgozz.\n
+
+2. Kalapács bicepsz hajlítás (semleges fogás)\n
+3 sorozat 12 ismétlés\n
+Ez az alkarra is dolgozik.\n
+
+3. Tricepsz nyújtás fej mögött kézisúlyzóval\n
+3 sorozat 12-15 ismétlés\n
+Mindkét kézzel fogd a súlyt.\n
+
+4. Tricepsz tolás gumikötéllel (állva vagy térdelve)\n
+3 sorozat 15 ismétlés\n
+A kötél ellenállásával dolgozz hátra.\n
+
+5. Tricepsz tolódás széken vagy padon\n
+3 sorozat 10-12 ismétlés\n
+Ha könnyű, lassítsd a mozdulatot.\n
+
+6. Csukló hajlítás kézisúlyzóval (alkar)\n
+2 sorozat 15-20 ismétlés\n
+Előre és hátra is végezhető.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Tricepsz nyújtás fej mögött 2x30 mp\n
+
+Csukló nyújtás tenyérrel előre és lefelé 2x30 mp\n
+
+"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/kezdofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Kezdő Kar Edzés Felszerelés Nélkül\n
+Időtartam: kb. 25-30 perc\n
+\n
+\n
+\n
+Bemelegítés (5 perc)\n
+Vállkörzés előre-hátra 2x20\n
+
+Kar-lendítés oldalra 2x20\n
+
+Csukló körzés 2x20\n
+
+Könnyű kar feszítés-lazítás 2x15\n
+\n
+\n
+\n
+Edzés Munka Rész (15-20 perc)\n
+1. Fali fekvőtámasz\n
+3 sorozat 12-15 ismétlés\n
+Kezdőknek nagyon jó, a kar és mellkas izmait dolgoztatja.\n
+
+2. Hátratolás (tricepszre)\n
+3 sorozat 15-20 ismétlés\n
+Állásban könyök behajlít, majd hátra tolod a kezed, mintha súlyt nyomnál.\n
+
+3. Plank tartás\n
+3 sorozat 20-30 másodperc\n
+A karokat, vállakat és törzset erősíti.\n
+
+4. Kar hajlítás-nyújtás levegőben\n
+3 sorozat 20 ismétlés\n
+Szorítsd meg erősen a bicepszt mozdulat közben, mintha súlyt emelnél.\n
+
+5. Szűk fekvőtámasz térdelve\n
+3 sorozat 8-12 ismétlés\n
+Tricepsz és váll is dolgozik. Térdelve könnyebb.\n
+
+6. Kar tartás oldalra (statikus)\n
+2 sorozat 30 másodperc tartás oldalt kinyújtott karokkal\n
+Égni fog a váll és kar!\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Tricepsz nyújtás fej mögött 2x30 mp\n
+
+Csukló nyújtás tenyérrel előre és lefelé 2x30 mp\n
+
+"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/halado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Haladó"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/haladofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Haladó Kar Edzés Felszereléssel\n
+Időtartam: kb. 40-45 perc\n
+Felszerelés:\n
+Kézi súlyzók (vagy kettlebell)\n
+
+Gumikötél / resistance band\n
+
+Tolódzkodó állvány vagy szék\n
+
+Húzódzkodó rúd (opcionális)\n
+\n
+\n
+\n
+Bemelegítés (5-7 perc)\n
+Kar körzés előre-hátra 2x20\n
+
+Könnyű bicepsz hajlítás gumikötéllel 2x15\n
+
+Csukló körzés 2x20\n
+
+Vállkörzés 2x20\n
+\n
+\n
+\n
+Edzés Munka Rész (25-30 perc)\n
+1. Bicepsz hajlítás kézisúlyzóval\n
+4 sorozat 10-12 ismétlés\n
+Szép lassú kontrollált mozdulat.\n
+
+2. Kalapács bicepsz hajlítás kézisúlyzóval\n
+4 sorozat 10-12 ismétlés\n
+Alkar is erősen dolgozik.\n
+
+3. Tricepsz tolás gumikötéllel vagy csigán\n
+4 sorozat 12-15 ismétlés\n
+Teljes kinyújtás legyen.\n
+
+4. Tricepsz tolódzkodás széken vagy tolódzkodó állványon\n
+3 sorozat 10-12 ismétlés\n
+Minél mélyebb mozdulat, annál jobb.\n
+
+5. Zottman Curl (bicepsz + alkar)\n
+3 sorozat 10 ismétlés\n
+Felfelé tenyérrel, lefelé fordítva engeded vissza.\n
+
+6. Csukló hajlítás kézisúlyzóval előre és hátra\n
+3 sorozat 15-20 ismétlés\n
+
+7. Húzódzkodás (opcionális)\n
+3 sorozat max ismétlés\n
+Bicepszet és hátat is erősíti.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5-7 perc)\n
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Tricepsz nyújtás fej mögött 2x30 mp\n
+
+Csukló nyújtás tenyérrel előre és lefelé 2x30 mp\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/haladofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Haladó Kar Edzés Felszerelés Nélkül\n
+Időtartam: kb. 30-35 perc\n
+\n
+\n
+\n
+Bemelegítés (5 perc)\n
+Vállkörzés előre-hátra 2x20\n
+
+Kar-lendítés oldalra 2x20\n
+
+Csukló körzés 2x20\n
+
+Plank tartás 2x30 mp\n
+
+Könnyű fekvőtámasz 2x10\n
+\n
+\n
+\n
+Edzés Munka Rész (20-25 perc)\n
+1. Szűk fekvőtámasz (tricepszre)\n
+4 sorozat 10-15 ismétlés\n
+Könyök szorosan a test mellett, lassan engedd le magad.\n
+
+2. Robbanékony fekvőtámasz (kar- és vállerő)\n
+3 sorozat 8-10 ismétlés\n
+Kilököd magad a talajtól, tenyér elemelkedik.\n
+
+3. Plank váll érintés\n
+3 sorozat 20 érintés (10-10 oldal)\n
+Törzs feszes, lassan és pontosan dolgozz.\n
+
+4. Hátratolás (tricepszre)\n
+3 sorozat 20 ismétlés\n
+Állva, könyök behajlít, majd teljesen hátra tolod a karod.\n
+
+5. Kar tartás oldalra és előre (statikus)\n
+2 sorozat 40-60 másodperc tartás\n
+Feszítsd a karod végig!\n
+
+6. Lassan végzett bicepsz utánzó mozdulat\n
+2 sorozat 20 ismétlés\n
+Ökölbe szorított kézzel, mintha súly lenne benne.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Tricepsz nyújtás fej mögött 2x30 mp\n
+
+Csukló nyújtás tenyérrel előre és lefelé 2x30 mp\n
+
+"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/napi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Napi feladatok"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/napialap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Napi Kar Edzés (kezdőknek és haladóknak is)\n
+Időtartam: kb. 20-30 perc\n
+\n
+\n
+\n
+Bemelegítés (5 perc)\n
+Vállkörzés előre-hátra 2x20\n
+
+Kar-lendítés oldalra 2x20\n
+
+Csukló körzés 2x20\n
+
+Könnyű kar nyújtás 2x20 mp\n
+\n
+\n
+\n
+Edzés Munka Rész (12-20 perc)\n
+1. Szűk fekvőtámasz térdelve vagy normál\n
+Kezdő: 3x10 ismétlés\n
+
+Haladó: 4x15 ismétlés\n
+\n
+2. Kar hátratolás állásban\n
+Kezdő: 3x15 ismétlés\n
+
+Haladó: 4x20 ismétlés\n
+\n
+3. Plank váll érintés\n
+Kezdő: 3x20 érintés (10-10 oldal)\n
+
+Haladó: 4x30 érintés (15-15 oldal)\n
+\n
+4. Bicepsz utánzó mozdulat lassan (súly nélkül)\n
+Kezdő: 2x20 ismétlés\n
+
+Haladó: 3x30 ismétlés + tartás a végén 10 mp\n
+\n
+5. Kar tartás oldalra és előre váltva (statikus)\n
+Kezdő: 2x30 mp tartás\n
+
+Haladó: 3x60 mp tartás\n
+\n
+\n
+\n
+Levezetés / Nyújtás (3-5 perc)\n
+Tricepsz nyújtás 2x30 mp\n
+
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Csukló nyújtás 2x30 mp\n
+
+"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,6 +1,539 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/kezdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Kezdő"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/kezdofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="💥 Kezdő mell edzés felszereléssel\n
+            \n
+\n
+\n
+🧰 Szükséges felszerelés:\n
+2 db könnyű vagy közepes súlyú kézi súlyzó (pl. 2–5 kg)\n
+
+Edzőpad vagy szőnyeg/matrac\n
+
+(Opcionálisan: gumiszalag vagy fittlabda – de nem kötelező)\n
+\n
+\n
+\n
+⏱️ Teljes edzésidő: kb. 20 perc\n
+\n
+\n
+\n
+🔄 1. Bemelegítés (3 perc)\n
+Vállkörzés és karhúzások – 1 perc\n
+
+Kézi súlyzók nélkül fekvőtámasz pozíció tartása – 30 mp\n
+
+Könnyű súlyzós karlengetés oldalt és előre – 1,5 perc\n
+\n
+\n
+\n
+🏋️ 2. Fő edzés (15 perc)\n
+Végezz 3 kört az alábbi gyakorlatokból.\n
+Minden gyakorlat után 30 mp pihenő.\n
+Körök között 1 perc pihenő.\n
+
+1. Fekvenyomás súlyzóval (padon vagy a földön fekve)\n
+
+12 ismétlés\n
+
+Figyelj arra, hogy ne zárd össze teljesen a karod a mozdulat tetején – így végig dolgozik a mellizom.\n
+
+2. Fekvőtámasz térdelve (kezdő verzió)\n
+
+10 ismétlés\n
+
+A könyököt told hátra, ne oldalra. Ha megy, próbálj meg 1-2 teljes fekvőtámaszt is.\n
+
+3. Tárogatás súlyzóval fekve\n
+
+10–12 ismétlés\n
+
+Karod enyhén hajlítva nyisd szét oldalra, majd hozd vissza középre.\n
+
+4. Súlyzós tolás előre állva (Chest Press állva)\n
+
+12 ismétlés\n
+
+Fogd össze a két súlyt mell előtt és told előre, majd vissza.\n
+
+5. Plank pozíció megtartása (alkartámasz)\n
+
+20–30 másodperc\n
+
+Ez stabilizálja a törzset és támogatja a mellkasi erőt is.\n
+\n
+\n
+\n
+🧘 3. Levezetés (2 perc)\n
+Kar- és mellizom nyújtása:\n
+
+Karokat nyújts hátra, tenyér kifelé – 30 mp\n
+
+Kar a mellkas előtt, könyök behúzva – 30 mp\n
+
+Mély légzés, váll leengedése – 1 perc\n
+\n
+\n
+\n
+✅ Összegzés:\n
+Szint: Kezdő\n
+
+Idő: kb. 20 perc\n
+
+Felszerelés: súlyzó, pad vagy szőnyeg\n
+
+Fókusz: mellizom, váll, kar, törzs\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/kezdofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="💥 Kezdő mell edzés felszerelés nélkül\n
+            \n
+\n
+\n
+🕐 Teljes edzésidő: kb. 15–20 perc\n
+Bemelegítés: 3 perc\n
+
+Fő edzés: kb. 12–15 perc\n
+
+Levezetés: 2 perc\n
+\n
+\n
+\n
+🔄 1. Bemelegítés (3 perc)\n
+Karkörzés előre-hátra – 30 mp\n
+
+Karhúzás mellkashoz váltva – 1 perc\n
+
+Lassú Jumping Jack vagy helyben járás, kéz magasra – 1,5 perc\n
+\n
+\n
+\n
+🏋️‍♂️ 2. Fő edzés (3 kör)\n
+Végezd el az alábbi gyakorlatokat egymás után.\n
+Minden gyakorlat után kb. 20–30 mp pihenő, körök között 1 perc.\n
+
+1. Térdelő fekvőtámasz (kezdő fekvőtámasz)\n
+
+10–12 ismétlés\n
+
+A térded maradjon a talajon, törzs feszes.\n
+
+Ha megy, a harmadik körben próbálj ki 1-2 teljes fekvőtámaszt!\n
+
+2. Mellkashoz tolás falnál (Wall Push-up)\n
+
+12–15 ismétlés\n
+
+Állj kb. 1 méterre a faltól, és végezz fekvőtámasz-szerű mozdulatot a falon.\n
+
+3. Karhúzás mellkas előtt (izometriás nyomás)\n
+
+20 másodperc\n
+
+Nyomd össze a két tenyered a mellkasod előtt erősen – érezd, ahogy dolgozik a mellizom.\n
+
+4. Tenyérnyomás ellentartással\n
+
+10 ismétlés (mindkét oldalra)\n
+
+Egyik kezedet told el oldalra, másik kézzel tarts ellen – lassú, feszes mozdulat legyen.\n
+\n
+\n
+\n
+🧘 3. Levezetés (2 perc)\n
+Mellkasnyitás karokkal hátra nyújtva – 30 mp\n
+
+Kar keresztben a mellkas előtt (váll-nyújtás) – 30 mp oldalanként\n
+
+Lassú mély légzés, vállak lelazítása – 30 mp\n
+\n
+\n
+\n
+✅ Összegzés:\n
+Szint: Kezdő\n
+
+Idő: kb. 15–20 perc\n
+
+Felszerelés: nincs szükség semmire\n
+
+Fókusz: mellizom, törzs, váll stabilizáció\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/halado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Haladó"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/haladofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🔥 Haladó mell edzés felszereléssel\n
+            \n
+\n
+\n
+🧰 Szükséges felszerelés:\n
+Edzőpad (állítható háttámlájú, ha van)\n
+
+Kézi súlyzók (közepes vagy nehéz)\n
+
+Gumiszalag (opcionális)\n
+
+(Ha van, akár tolódzkodó állvány vagy TRX is bevethető)\n
+\n
+\n
+\n
+⏱️ Teljes idő: 30–40 perc\n
+
+Bemelegítés: 5 perc\n
+
+Fő edzés: 25–30 perc\n
+
+Levezetés/nyújtás: 5 perc\n
+\n
+\n
+\n
+🏃‍♂️ 1. Bemelegítés (5 perc)\n
+Karkörzések, kartolás – 1 perc\n
+
+Könnyű súlyzós mellkasi bemelegítő mozgások – 2 perc\n
+
+Fekvőtámasz (lassú tempóban, 10 ismétlés) – 1 perc\n
+
+Nyújtás: kar hátranyújtás, váll környéke – 1 perc\n
+\n
+\n
+\n
+💪 2. Fő edzés – 4 kör, 5 gyakorlat\n
+\n
+\n
+🔁 Végezd el mind az 5 gyakorlatot egy körben, majd pihenj 60–90 mp-et, és ismételd összesen 4x.\n
+
+1. Fekvenyomás kézi súlyzóval (vízszintes padon)\n
+10–12 ismétlés\n
+
+Erőre és tömegre dolgozik, kontrollált mozgással.\n
+
+2. Tárogatás súlyzóval (vízszintes padon)\n
+12 ismétlés\n
+
+Figyelj a könyök enyhe hajlítására és a mellkas megnyitására.\n
+
+3. Ferdepados fekvenyomás (felső mellizom)\n
+10 ismétlés\n
+
+Padot 30–45 fokos szögbe állítsd.\n
+
+4. Tolódzkodás (ha van állvány, vagy két párhuzamos felület)\n
+8–12 ismétlés\n
+
+Mellkas előredöntve, ne csak tricepszből dolgozz.\n
+
+Ha nincs tolódzkodó állvány, helyettesítheted:\n
+
+Fekvőtámasz lábemeléssel: 10 ismétlés / láb\n
+
+5. Gumiszalagos nyomás mellkas előtt (állva vagy ülve)\n
+15 lassú, feszes ismétlés\n
+
+Kiváló záró gyakorlat az -égetésre- és a pumpálásra.\n
+\n
+\n
+\n
+🧘‍♂️ 3. Levezetés – 5 perc\n
+Karok hátranyújtva: mellkas nyújtása – 1 perc\n
+
+Kar keresztben a mellkas előtt – 30 mp oldalanként\n
+
+Fekvés a padon, karok kilazítva oldalra – 1–2 perc\n
+
+Mély légzés, vállkörzés, nyújtás – 1 perc\n
+\n
+\n
+\n
+✅ Összefoglalás:\n
+Szint: Haladó\n
+
+Időtartam: kb. 30–40 perc\n
+
+Felszerelés: pad, kézi súlyzók, esetleg tolódzkodó vagy gumiszalag\n
+
+Fókusz: mellizom erősítése, formálása, felső–alsó szekció aktiválása\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/haladofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🔥 Haladó mell edzés – felszerelés nélkül\n
+            \n
+\n
+\n
+⏱️ Teljes edzésidő: kb. 25–30 perc\n
+Bemelegítés: 5 perc\n
+
+Fő edzés: kb. 20 perc\n
+
+Levezetés: 3–5 perc\n
+\n
+\n
+\n
+🏃‍♂️ 1. Bemelegítés – 5 perc\n
+Karkörzés, karhúzás váltva – 1 perc\n
+
+Jumping Jack – 1 perc\n
+
+Plank tartás – 30 mp\n
+
+Könnyű fekvőtámasz (lassú) – 10 ismétlés\n
+
+Mellkas nyitása karhátranyújtással – 1 perc\n
+
+Mély légzés és vállkörzés – 30 mp\n
+\n
+\n
+\n
+💪 2. Fő edzés (20 perc)\n
+\n
+\n
+🔁 4 kör, 5 gyakorlat – 30 mp pihenő gyakorlatok között, 1 perc körök között\n
+
+1. Klasszikus fekvőtámasz\n
+15–20 ismétlés\n
+
+Tartsd a könyöködet 45 fokban a testedhez képest.\n
+
+2. Szűk fekvőtámasz\n
+10–15 ismétlés\n
+
+Kéz a mellkas alatt, könyök szorosan a test mellett. Erősen dolgozik a belső mellizom és a tricepsz.\n
+
+3. Emelkedő lábas fekvőtámasz\n
+10–12 ismétlés\n
+
+Lábakat tegyél fel ágyra/székre, így jobban dolgozik a felső mell.\n
+
+4. Kitartott -izometrikus- fekvőtámasz\n
+Tartsd meg a fekvőtámasz alsó pozícióját 20–30 másodpercig.\n
+
+Kihívás az izomfeszítésre és állóképességre.\n
+
+5. Robbanékony fekvőtámasz / Tapsolós fekvőtámasz\n
+5–8 ismétlés (vagy amennyi megy)\n
+
+Ha nehéz, végezd térdelve, de maradjon robbanékony a mozdulat!\n
+\n
+\n
+\n
+🧘‍♂️ 3. Levezetés – 3–5 perc\n
+Mellkasnyitás karok hátranyújtásával – 1 perc\n
+
+Kar keresztben mellkason – 30–30 mp oldalanként\n
+
+Fekvés a talajon, karok oldalsó nyújtásban – 1–2 perc\n
+
+Mély légzés, vállkörzés, nyaki lazítás – 1 perc\n
+\n
+\n
+\n
+✅ Összegzés:\n
+Szint: Haladó\n
+
+Időtartam: 25–30 perc\n
+
+Felszerelés: nincs szükség rá\n
+
+Fókusz: mellizom erősítése saját testsúllyal, robbanékonyság és állóképesség fejlesztése\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/napi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Napi feladatok"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/napialap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🏋️‍♂️ Napi mell edzés – Kezdő és haladó verzió\n
+            \n
+\n
+\n
+🕐 Teljes idő: kb. 25–30 perc\n
+Bemelegítés: 5 perc\n
+
+Fő edzés: 20 perc\n
+
+Levezetés/nyújtás: 3–5 perc\n
+\n
+\n
+\n
+🏃‍♂️ 1. Bemelegítés – 5 perc\n
+Karkörzés előre-hátra – 1 perc\n
+
+Jumping Jack – 1 perc\n
+
+Könnyű fekvőtámasz (lassú, kontrollált mozgás) – 8–10 ismétlés\n
+
+Karok nyújtása előre-hátra – 1 perc\n
+
+Törzsdöntés oldalra – 1 perc\n
+\n
+\n
+\n
+💪 2. Fő edzés – 20 perc (3 kör)\n
+\n
+\n
+🔁 3 kör, pihenő 30 mp gyakorlatok között, 1 perc körök között\n
+
+Kezdőknek: Végezz kevesebb ismétlést, pihenj többet, ha szükséges.\n
+
+Haladóknak: Próbálj meg gyorsabb tempóval dolgozni, és növelheted az ismétléseket.\n
+
+1. Klasszikus fekvőtámasz\n
+Kezdők: 8–10 ismétlés\n
+
+Haladók: 15–20 ismétlés\n
+
+Tartsd a könyöködet 45 fokban a testhez képest. A fekvőtámasz mozdulata legyen kontrollált!\n
+
+2. Szűk fekvőtámasz (tricepsz és mellizom)\n
+Kezdők: 6–8 ismétlés\n
+
+Haladók: 12–15 ismétlés\n
+
+Tedd a kezed a mellkasod alatt, a könyöködet tartsd szorosan a test mellett.\n
+
+3. Ferde fekvőtámasz (felső mellizom)\n
+Kezdők: 6–8 ismétlés (lábaidat emeld fel egy székre vagy padra)\n
+
+Haladók: 10–12 ismétlés (minél meredekebben, annál intenzívebb)\n
+
+4. Tapsolós fekvőtámasz (robbanékony fekvőtámasz)\n
+Kezdők: Ha túl nehéz, próbáld meg térdelve végezni.\n
+
+Haladók: 5–8 tapsolós fekvőtámasz (robbanékony mozdulattal)\n
+
+Ez egy dinamikus gyakorlat, amely gyors erőfejlesztésre és robbanékonyságra is kiváló.\n
+
+5. Izometrikus fekvőtámasz (tartsd ki az alsó pozíciót)\n
+Kezdők: 10–20 másodperc\n
+
+Haladók: 30 másodperc\n
+
+Tartsd meg a fekvőtámasz alsó pozícióját – érezni fogod, hogy a mellizom folyamatosan dolgozik.\n
+\n
+\n
+\n
+🧘 3. Levezetés és nyújtás – 3–5 perc\n
+Mellkasnyitás (karok hátranyújtásával) – 1 perc\n
+
+Kar keresztben a mellkas előtt (vállnyújtás) – 30 másodperc oldalanként\n
+
+Fekvő pozíció, karok oldalra nyújtva (mellkas nyújtása) – 1–2 perc\n
+
+Mély légzés és relaxáció – 1 perc\n
+\n
+\n
+\n
+✅ Összegzés:\n
+Szint: Kezdő és haladó\n
+
+Időtartam: kb. 25–30 perc\n
+
+Felszerelés: nincs szükség semmire\n
+
+Fókusz: mellizom fejlesztése saját testsúllyal, robbanékonyság, erő és állóképesség növelése\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

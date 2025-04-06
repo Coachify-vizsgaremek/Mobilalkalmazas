@@ -1,17 +1,407 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cardio Edzés"
-        android:textSize="240sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/kezdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Kezdő"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/kezdofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🏋️‍♀️ 20 perces kezdő kardió edzés felszereléssel
+            \n
+\n
+\n
+🧰 Szükséges felszerelés:\n
+Ugrálókötél\n
+
+Kézi súlyzók (1–3 kg is elég)\n
+
+Step pad vagy alacsony lépcső\n
+\n
+\n
+\n
+1. Bemelegítés (3 perc)\n
+Ugrálókötél lassan – 1 perc\n
+
+Kar- és vállkörzés súlyzó nélkül – 1 perc\n
+
+Oldalra lépegetés és törzshajlítás – 1 perc\n
+\n
+\n
+\n
+2. Fő edzés (15 perc – 3 kör, 5 gyakorlat)\n
+Minden gyakorlat: 30 másodperc munka + 15 másodperc pihenő\n
+Körök között 1 perc pihenő\n
+
+Ugrálókötél (gyors tempóban)\n
+
+Guggolás súlyzóval (kezedben a súlyok, le-fel guggolás)\n
+
+Step pad fellépés (váltott láb, akár súlyzóval)\n
+
+Bicepszhajlítás súlyzóval + térdemelés váltva\n
+
+Kitörés hátra súlyzóval\n
+
+🔁 Végezd el a fenti sort 3x egymás után\n
+\n
+\n
+\n
+3. Levezetés (2 perc)\n
+Lassú helyben járás – 1 perc\n
+
+Nyújtás (lábra, karra, vállra) – 1 perc\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/kezdofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🔥 15 perces kezdő kardió edzés otthonra
+            \n
+\n
+\n
+            Bemelegítés (3 perc)\n
+
+Helyben járás – 1 perc\n
+
+Körzések karral előre-hátra – 1 perc\n
+
+Térdemelés váltott karral – 1 perc\n
+\n
+\n
+\n
+Fő edzés (10 perc – 2 kör, 5 gyakorlat)\n
+
+Jumping Jack (terpesz-zár szökkenés) – 30 mp\n
+
+Magastérdemelés helyben futva – 30 mp\n
+
+Kitörés váltott lábbal (Lunges) – 30 mp\n
+
+Guggolás (Squats) – 30 mp\n
+
+Hegymászó (Mountain Climbers) – 30 mp\n
+👉 Pihenő a körök között: 1 perc\n
+🔁 Ismételd meg a kört még egyszer!\n
+\n
+\n
+\n
+Levezetés (2 perc)\n
+
+Lassú helyben járás – 1 perc\n
+
+Nyújtás (comb, vádli, karok) – 1 perc\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/halado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Haladó"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/haladofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🔥 30 perces haladó kardió edzés felszereléssel
+            \n
+\n
+\n
+🧰 Szükséges felszerelés:\n
+Ugrálókötél\n
+
+Kettlebell (vagy kézi súlyzó)\n
+
+Step pad vagy magasabb lépcső\n
+
+Medicinlabda (vagy egy nagyobb, nehezebb labda)\n
+
+Edzőszőnyeg (kényelmesebb talajmunka miatt)\n
+\n
+\n
+\n
+1. Bemelegítés (5 perc)\n
+Ugrálókötél közepes tempóval – 2 perc\n
+
+Dinamikus guggolás + karkörzés – 1 perc\n
+
+Kitörés oldalra, törzsfordítással – 1 perc\n
+
+Bokaugrások, könnyed tempó – 1 perc\n
+\n
+\n
+\n
+2. Fő edzés (20 perc – 4 kör, 5 gyakorlat)\n
+Időrend:\n
+
+Minden gyakorlat: 40 mp munka / 20 mp pihenő\n
+
+Körök között: 1 perc pihenő\n
+
+💪 Gyakorlatok:\n
+Burpee + medicinlabda dobás a falhoz (vagy labdaemelés a fej fölé)\n
+
+Kettlebell swing (lendítés csípőből)\n
+
+Step pad felugrás váltott lábbal (robbanékony mozdulat)\n
+
+Ugrálókötél dupla ugrás vagy sprint tempó\n
+
+Plank pozícióból súlyzóhúzás váltott kézzel (Renegade Row)\n
+
+🔁 4 teljes kör – ez kb. 20 perc\n
+\n
+\n
+\n
+3. Levezetés (5 perc)\n
+Lassú séta helyben vagy ugrálókötél lassan – 1 perc\n
+
+Teljes test nyújtás:\n
+
+Combhajlító, vádli, csípő, váll, hát – 4 perc\n
+\n
+\n
+\n
+⏱️ Teljes idő: kb. 30 perc\n
+\n
+\n
+\n
+Hatás:\n
+
+Maximális kalóriaégetés\n
+
+Kardió + funkcionális erőnlét fejlesztése\n
+
+Robbanékonyság, állóképesség, koordináció\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/haladofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="30 perces haladó kardió edzés (felszerelés nélkül)
+            \n
+\n
+\n
+✅ Felépítés:\n
+Bemelegítés – 5 perc\n
+
+Fő edzés – 20 perc (4 kör HIIT)\n
+
+Levezetés – 5 perc\n
+\n
+\n
+\n
+🔥 1. Bemelegítés (5 perc)\n
+Helyben futás – 1 perc\n
+
+Kar- és csípőkörzés – 1 perc\n
+
+Térdfelhúzás váltott karral – 1 perc\n
+
+Kitörés előre és oldalra váltva – 1 perc\n
+
+Ugrálás terpesz-zár (Jumping Jack) – 1 perc\n
+\n
+\n
+\n
+🧨 2. Fő edzés (20 perc – 4 kör, 5 gyakorlat)\n
+Minden gyakorlat: 40 mp munka / 20 mp pihenő\n
+Körök között: 1 perc pihenő\n
+
+🔁 1 kör gyakorlatai:\n
+Burpee (teljes test, robbanékony)\n
+
+Guggolásból felugrás (Jump Squats)\n
+
+Hegymászó (Mountain Climbers – gyors tempó)\n
+
+Térdfelhúzás sprint tempóban (High Knees)\n
+
+Plank + vállérintés váltva (Plank Shoulder Taps)\n
+
+🔄 Ismételd a sort 4x\n
+\n
+\n
+\n
+🧘‍♂️ 3. Levezetés (5 perc)\n
+Helyben séta – 1 perc\n
+
+Mély légzés, karok kilazítása – 1 perc\n
+
+Láb-, derék-, kar- és hátizom nyújtás – 3 perc\n
+\n
+\n
+\n
+⏱️ Teljes edzésidő: kb. 30 perc\n
+\n
+\n
+\n
+Hatás:\n
+
+Intenzív zsírégetés\n
+
+Állóképesség és robbanékonyság fejlesztése\n
+
+Teljes test megmozgatása\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/napi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Napi feladatok"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/napiatlagos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="🏃‍♀️ Napi Kardió Edzés (kezdőknek és haladóknak)\n
+Teljes idő: kb. 20–25 perc\n
+Nem kell felszerelés!\n
+\n
+\n
+\n
+🔥 1. Bemelegítés – 3 perc (mindkét szintnek ugyanaz)\n
+Helyben járás egyre gyorsabban – 1 perc\n
+
+Karkörzés előre-hátra – 30 másodperc\n
+
+Térdemelés váltott karral – 1 perc\n
+
+Ugrálás terpesz-zár (Jumping Jack) – 30 másodperc\n
+\n
+\n
+\n
+💪 2. Fő edzés – kb. 15 perc (3 kör)\n
+1. Jumping Jack\n
+
+Kezdő: 30 másodperc közepes tempó\n
+
+Haladó: 1 perc gyors tempó\n
+
+2. Guggolás\n
+
+Kezdő: 12 ismétlés simán\n
+
+Haladó: 20 ismétlés, felugrással a végén (jump squat)\n
+
+3. Hegymászó (Mountain Climbers)\n
+
+Kezdő: 20 másodperc lassan\n
+
+Haladó: 40 másodperc gyorsan\n
+
+4. Kitörés váltott lábbal\n
+
+Kezdő: 10-10 ismétlés mindkét lábra, nyugodt tempó\n
+
+Haladó: 15-15 ismétlés, dinamikusabb mozgással\n
+
+5. Plank (alkartámasz)\n
+
+Kezdő: 20 másodperc\n
+
+Haladó: 1 perc\n
+
+🔁 Ismételd meg ezt a sort összesen háromszor.\n
+
+Pihenő körök között:\n
+
+Kezdő: 1–1,5 perc\n
+
+Haladó: maximum 30 másodperc\n
+\n
+\n
+\n
+🧘‍♀️ 3. Levezetés – 3–4 perc (mindkét szintnek)\n
+Laza séta helyben – 1 perc\n
+
+Törzshajlítás lefelé, kilazítás – 1 perc\n
+
+Combhajlító, vádli, kar és váll nyújtása – 1–2 perc\n
+
+Mély belégzés–kilégzés, vállak leengedése – fél perc\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

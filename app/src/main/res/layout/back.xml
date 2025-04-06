@@ -1,6 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63dp"
+        android:padding="16dp"
+        android:background="#80FFFFFF">
+
+
+        <TextView
+            android:id="@+id/kezdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Kezdő"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/kezdofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Kezdő Hát Edzés Felszereléssel\n
+Időtartam: kb. 35-45 perc\n
+Felszerelés:\n
+Gumikötél / resistance band\n
+
+Kézi súlyzó (vagy kettlebell, vagy palack)\n
+
+Kábelgép (ha van)\n
+
+Húzódzkodó rúd (ha van)\n
+
+Bemelegítés (5-8 perc)\n
+Vállkörzés 2x20\n
+
+Gumiköteles lapockazárás 2x20\n
+
+Könnyű evezés gumikötéllel 2x15\n
+
+Kar-lendítés előre-hátra 2x20\n
+\n
+\n
+\n
+Edzés Munka Rész (25-30 perc)\n
+Gumiköteles evezés ülve vagy állva – 3 sorozat 15 ismétlés\n
+Szépen lapockára dolgozz, lassan húzd hátra a könyököket.\n
+
+Kézisúlyzós egykezes evezés padon – 3 sorozat 12-15 ismétlés karonként\n
+Ha nincs pad, előre dőlve is jó.\n
+
+Kábel lehúzás mellkas elé (vagy gumikötéllel) – 3 sorozat 12-15 ismétlés\n
+Széles fogás, vállból induljon, hátizomból érkezzen.\n
+
+Superman (hasalva, kar és láb emelése) – 3 sorozat 20-30 másodperc tartás\n
+
+Face Pull gumikötéllel vagy kábelgépen – 3 sorozat 15-20 ismétlés\n
+Nagyon fontos a váll stabilitására.\n
+
+Húzódzkodás segítő gumival (ha van rúd) – 2-3 sorozat 4-6 ismétlés\n
+Ha nincs rúd, helyette gumiköteles lehúzás vagy TRX evezés.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Lógás (ha van rúd) 2x max idő\n
+
+Gyermekpóz nyújtás 2x30 mp\n
+
+Váll hátrahúzás 2x30 mp\n
+
+Gerinc csavarás fekve 2x30 mp oldalanként\n
+
+Összes idő: kb. 35-45 perc\n
+Bemelegítés: 5-8 perc\n
+
+Edzés: 25-30 perc\n
+
+Nyújtás: 5 perc\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/kezdofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Kezdő Hát Edzés Felszerelés Nélkül\n
+Időtartam: kb. 30-40 perc\n
+Bemelegítés (5-8 perc)\n
+Vállkörzés 2x20\n
+
+Kar-lendítés előre-hátra 2x20\n
+
+Lapockazárás állásban 2x20 (mintha hátra húznál valamit)\n
+
+Törzs csavarás állásban 2x15 oldalanként\n
+\n
+\n
+\n
+Edzés Munka Rész (20-25 perc)\n
+Superman (hasalva kar és láb emelése) – 3 sorozat 20-30 másodperc tartás\n
+Segíti a hát alsó részének és gerinctartó izmoknak az erősítését.\n
+
+Fordított angyal (hasalva, karok oldalról fül mellé húzása) – 3 sorozat 15 ismétlés\n
+Lapockazárásra és hátközépre dolgozik.\n
+
+-T- tartás (hasalva, karok oldalt, tenyér lefelé) – 3 sorozat 30 másodperc tartás\n
+Szépen megdolgoztatja a hátizmokat.\n
+
+Plank evezés imitálva (plank pozícióból egyik kar hátrahúzása) – 3 sorozat 10-12 ismétlés oldalanként\n
+Stabilizáló izmokra és hát felső részére jó.\n
+
+Hát-híd (fekvésből törzs- és mellkas emelés) – 3 sorozat 15 ismétlés\n
+Felső hát és gerinctartás fejlesztése.\n
+
+Lógás imitálása (állásban lapocka le- és hátrahúzása) – 2 sorozat 20 ismétlés\n
+Segíti a húzódzkodáshoz szükséges izmok aktiválását.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Gyermekpóz nyújtás 2x30 mp\n
+
+Cica-hát domborítás-homorítás 2x15\n
+
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Oldalsó törzsnyújtás 2x30 mp oldalanként\n
+
+Összes idő: kb. 30-40 perc\n
+Bemelegítés: 5-8 perc\n
+
+Edzés: 20-25 perc\n
+
+Nyújtás: 5 perc\n
+
+"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/halado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Haladó"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/haladofelszereles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Haladó Hát Edzés (kb. 50-60 perc)
+Felszerelés:\n
+Rúd\n
+
+Súlyok\n
+
+Kábel gép\n
+
+Húzódzkodó rúd\n
+
+Kézi súlyzók\n
+
+Evező pad (ha van)\n
+\n
+\n
+\n
+Bemelegítés (5-10 perc)\n
+Kezdj egy általános bemelegítéssel: vállkörzés, gumiköteles hát aktiválás, könnyű evezés gépen 3-5 percig. Végezz pár könnyű sorozatot a későbbi gyakorlatokból is.\n
+\n
+\n
+\n
+Edzés Munka Rész (kb. 35-40 perc)\n
+Húzódzkodás széles fogással – 4 sorozat 6-10 ismétlés. Ha megy, használj plusz súlyt, ha nem, segítő gumival csináld.\n
+
+Evezés rúddal döntött törzzsel – 4 sorozat 8-10 ismétlés. Figyelj a szép szabályos kivitelezésre, végig feszítsd a hátad.\n
+
+Mellpárnás evezés (vagy gépen) – 3 sorozat 10-12 ismétlés. Itt törekedj az erős lapockazárásra.\n
+
+Széles lehúzás kábel gépen – 4 sorozat 10-12 ismétlés. Lassú, kontrollált negatív szakaszra figyelj.\n
+
+Egykezes evezés kézisúllyal – 3 sorozat 12-15 ismétlés karonként. Próbáld meg teljes mozgástartományban végezni.\n
+
+Face Pull kábel gépen – 3 sorozat 15-20 ismétlés. Nagyon fontos a váll-hát egészsége miatt, ne hagyd ki.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Lógás húzódzkodó rúdon 2x max ideig (lazítja a gerincet és a fogást is fejleszti)\n
+
+Lapocka és hát nyújtások\n
+
+Váll mobilizálás\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/haladofelszerelesnelkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Haladó Hát Edzés (saját testsúllyal)\n
+Időtartam: kb. 40-50 perc\n
+Bemelegítés (5-10 perc)\n
+Vállkörzés 2x20\n
+
+Lapocka zárás állásban 2x20\n
+
+Hát domborítás-homorítás 2x15\n
+
+Kar-lendítések 2x20\n
+
+Könnyű plank 1 perc\n
+\n
+\n
+\n
+Edzés Munka Rész (30-35 perc)\n
+Húzódzkodás (ha van rúdon, ha nincs: asztal alatt vagy ajtókeretben) – 4 sorozat 6-10 ismétlés. Ha nem megy simán, ugrással segített vagy negatív lassú engedés.\n
+
+Superman tartás (hasalva, kar és láb emelése) – 4 sorozat 30-40 másodperc tartás.\n
+
+Fordított angyal (hasalva, karok oldalra és fül mellé húzás) – 4 sorozat 15-20 ismétlés. Szépen lapockára dolgozz.\n
+
+Plank evezés (plank pozícióból egyik kar hátrahúz) – 3 sorozat 12-15 ismétlés oldalanként.\n
+
+Lapos földön -T- formáció tartás (karok oldalt, hasalva) – 3 sorozat 30 másodperc tartás.\n
+
+Hát-híd (fekvésből törzs- és mellkas emelés) – 3 sorozat 15-20 ismétlés.\n
+
+Lógás (ha van lehetőséged pl. ajtó vagy rúd) – 2 sorozat max ideig.\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Cica-hát domborítás-homorítás 2x15\n
+
+Gyermekpóz nyújtás 2x30 mp\n
+
+Váll hátra húzás 2x30 mp\n
+
+Oldalsó törzsnyújtás 2x30 mp\n
+
+Összes idő: kb. 40-50 perc\n
+Bemelegítés: 5-10 perc\n
+
+Edzés: 30-35 perc\n
+
+Nyújtás: 5 perc\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/napi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="28sp"
+            android:text="Napi feladatok"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/napialap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:text="Napi Hát Edzés (Kezdőnek és Haladónak is)\n
+Időtartam: kb. 30-40 perc\n
+Bemelegítés (5-8 perc)\n
+Vállkörzés 2x20\n
+
+Kar-lendítés előre-hátra 2x20\n
+
+Lapockazárás állásban 2x20\n
+
+Törzs csavarás állásban 2x15 oldalanként\n
+\n
+\n
+\n
+Edzés Munka Rész (20-25 perc)\n
+1. Superman (hasalva kar és láb emelése)\n
+Kezdő: 3 sorozat 20 másodperc tartás\n
+
+Haladó: 4 sorozat 30-40 másodperc tartás\n
+
+2. Fordított angyal (hasalva kar húzás fül mellé)\n
+Kezdő: 3 sorozat 12 ismétlés\n
+
+Haladó: 4 sorozat 15-20 ismétlés\n
+
+3. Plank evezés imitálva (plankból egyik kart hátrahúzni)\n
+Kezdő: 3 sorozat 10 ismétlés oldalanként\n
+
+Haladó: 4 sorozat 12-15 ismétlés oldalanként\n
+
+4. Hát-híd (fekvésből törzs és mellkas emelése)\n
+Kezdő: 3 sorozat 15 ismétlés\n
+
+Haladó: 4 sorozat 20 ismétlés\n
+
+5. -T- tartás (hasalva karok oldalt kitartva)\n
+Kezdő: 2 sorozat 20 másodperc tartás\n
+
+Haladó: 3 sorozat 30 másodperc tartás\n
+\n
+\n
+\n
+Levezetés / Nyújtás (5 perc)\n
+Gyermekpóz nyújtás 2x30 mp\n
+
+Cica-hát domborítás-homorítás 2x15\n
+
+Kar nyújtás mellkas előtt 2x30 mp\n
+
+Oldalsó törzsnyújtás 2x30 mp oldalanként\n
+
+Összes idő: kb. 30-40 perc\n
+Bemelegítés: 5-8 perc\n
+
+Edzés: 20-25 perc\n
+
+Nyújtás: 5 perc\n
+\n
+\n
+\n
+Tipp:\n
+Kezdőként inkább a kevesebb sorozatot és rövidebb tartásokat válaszd.\n
+
+Haladóként növeld a sorozatok számát, hosszabb ideig tartsd a pozíciókat és lassabban végezd a gyakorlatokat\n"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

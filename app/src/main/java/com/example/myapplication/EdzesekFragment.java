@@ -17,6 +17,18 @@ public class EdzesekFragment extends Fragment {
             // CardioFragment betöltése
             ((MainActivity)getActivity()).loadFragment(new CardioFragment(), true);
         });
+        view.findViewById(R.id.i2).setOnClickListener(v -> {
+            // ChestFragment betöltése
+            ((MainActivity)getActivity()).loadFragment(new ChestFragment(), true);
+        });
+        view.findViewById(R.id.i4).setOnClickListener(v -> {
+            // ArmsFragment betöltése
+            ((MainActivity)getActivity()).loadFragment(new BackFragment(), true);
+        });
+        view.findViewById(R.id.i3).setOnClickListener(v -> {
+            // BackFragment betöltése
+            ((MainActivity)getActivity()).loadFragment(new ArmsFragment(), true);
+        });
 
         return view;
     }
