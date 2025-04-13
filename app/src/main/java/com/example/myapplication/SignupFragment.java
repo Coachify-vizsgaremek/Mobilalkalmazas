@@ -22,7 +22,7 @@ public class SignupFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.signup, container, false);
 
-        // View elemek összekötése - IDE KELL A findViewById()!
+        // View elemek összekötése
         etName = view.findViewById(R.id.signup_name);
         etEmail = view.findViewById(R.id.signup_email);
         etPassword = view.findViewById(R.id.signup_password);
@@ -32,7 +32,7 @@ public class SignupFragment extends Fragment {
 
         databaseHelper = new DatabaseHelper(requireActivity());
 
-        // Regisztráció gomb kezelése - adjunk hozzá logolást
+        // Regisztráció gomb kezelése
         btnSignup.setOnClickListener(v -> {
             Log.d("SignupFragment", "Signup button clicked");
             handleSignup();
@@ -55,7 +55,7 @@ public class SignupFragment extends Fragment {
         String password = etPassword.getText().toString().trim();
         String confirmPassword = etConfirmPassword.getText().toString().trim();
 
-        // Ellenőrzés - adjunk hibaüzeneteket
+        // Ellenőrzés
         if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
             Toast.makeText(getContext(), "Minden mező kitöltése kötelező", Toast.LENGTH_LONG).show();
             return;
@@ -72,9 +72,9 @@ public class SignupFragment extends Fragment {
         }
 
         if (databaseHelper.addUser(name, email, password)) {
-            // Sikeres regisztráció után frissítsd a headert
+
             ((MainActivity)requireActivity()).updateDrawerHeader(name, email);
-            // Navigálj a Loginra
+
             navigateToLogin();
         } else {
             Toast.makeText(getContext(), "Regisztrációs hiba történt", Toast.LENGTH_LONG).show();

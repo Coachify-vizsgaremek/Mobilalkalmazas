@@ -13,7 +13,7 @@
         android:padding="16dp"
         android:background="#80FFFFFF">
 
-        <!-- 1. fekete doboz (nem szerkeszthető) -->
+
         <TextView
             android:id="@+id/box1"
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- 2. kép és szöveg -->
+
         <ImageView
             android:id="@+id/image2"
             android:layout_width="400dp"
@@ -67,7 +67,7 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- 3. kép és szöveg -->
+
         <ImageView
             android:id="@+id/image3"
             android:layout_width="400dp"

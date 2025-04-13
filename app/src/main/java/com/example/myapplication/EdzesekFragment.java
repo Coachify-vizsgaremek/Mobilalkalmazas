@@ -22,11 +22,11 @@ public class EdzesekFragment extends Fragment {
             ((MainActivity)getActivity()).loadFragment(new ChestFragment(), true);
         });
         view.findViewById(R.id.i4).setOnClickListener(v -> {
-            // ArmsFragment betöltése
+            // BackFragment betöltése
             ((MainActivity)getActivity()).loadFragment(new BackFragment(), true);
         });
         view.findViewById(R.id.i3).setOnClickListener(v -> {
-            // BackFragment betöltése
+            // ArmsFragment betöltése
             ((MainActivity)getActivity()).loadFragment(new ArmsFragment(), true);
         });
 

@@ -9,6 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
+import com.example.myapplication.network.models.LoginRequest;
+import com.example.myapplication.network.models.LoginResponse;
+import com.example.myapplication.network.ApiService;
+import com.example.myapplication.network.RetrofitClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class LoginFragment extends Fragment {
@@ -57,6 +64,7 @@ public class LoginFragment extends Fragment {
             Toast.makeText(getContext(), "Hibás email vagy jelszó", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private void navigateToSignup() {
         ((MainActivity)requireActivity()).loadFragment(new SignupFragment());

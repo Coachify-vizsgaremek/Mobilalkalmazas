@@ -32,7 +32,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        if (oldVersion < 2) {  // Verzió frissítés
+        if (oldVersion < 2) {
             db.execSQL("ALTER TABLE " + TABLE_NAME + " ADD COLUMN " + COLUMN_NAME + " TEXT");
         }
     }
@@ -40,7 +40,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean addUser(String name, String email, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(COLUMN_NAME, name); // Név hozzáadása
+        values.put(COLUMN_NAME, name);
         values.put(COLUMN_EMAIL, email);
         values.put(COLUMN_PASSWORD, password);
         long result = db.insert(TABLE_NAME, null, values);

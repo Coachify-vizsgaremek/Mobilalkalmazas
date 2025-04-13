@@ -8,7 +8,7 @@
     android:padding="16dp"
     android:background="#80FFFFFF">
 
-    <!-- 1. fekete doboz (nem szerkeszthető) -->
+
 
     <TextView
         android:id="@+id/box1"
@@ -33,7 +33,7 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 2. fekete doboz -->
+
     <TextView
         android:id="@+id/box3"
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 3. fekete doboz -->
+
     <TextView
         android:id="@+id/box4"
         android:layout_width="match_parent"
